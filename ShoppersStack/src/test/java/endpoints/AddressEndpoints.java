@@ -13,9 +13,9 @@ public class AddressEndpoints {
 				.header("Authorization","Bearer "+token)
 				.pathParam("shopperId", shopperId)
 				.when().post(Routes.addAddressUrl);
-		
+
 		return resp;
-				
-				
+
+
 	}
 }

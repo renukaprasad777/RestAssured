@@ -1,7 +1,7 @@
 package payload;
 
 public class Address {
-	
+
 	int addressId;
 	String buildingInfo;
 	String city;
@@ -14,7 +14,7 @@ public class Address {
 	String streetInfo;
 	String type;
 
-	
+
 	public int getAddressId() {
 		return addressId;
 	}
@@ -81,5 +81,5 @@ public class Address {
 	public void setType(String type) {
 		this.type = type;
 	}
-	
+
 }

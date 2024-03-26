@@ -9,8 +9,8 @@ public class LoginEndpoint {
 	//given & when
 	public static Response Login(payload.Login payload) {
 		Response resp = RestAssured.given().contentType(ContentType.JSON)
-		.body(payload)
-		.when().post(Routes.loginUrl);
+				.body(payload)
+				.when().post(Routes.loginUrl);
 		return resp;
 	}
 }

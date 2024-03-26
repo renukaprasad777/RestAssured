@@ -1,7 +1,7 @@
 package payload;
 
 public class updateCart {
-	
+
 	int productId;
 	public int getProductId() {
 		return productId;
@@ -16,8 +16,8 @@ public class updateCart {
 		this.quantity = quantity;
 	}
 	int quantity;
-		
-		
-	
+
+
+
 
 }

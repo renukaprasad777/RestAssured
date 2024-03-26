@@ -30,7 +30,7 @@ public class E2e {
 	int addressId;
 	int	reviewId;
 
-	
+
 	@Test(priority = 1)
 	public void login() {
 		Login log=new Login();
@@ -144,10 +144,10 @@ public class E2e {
 		resp.then().assertThat().statusCode(200);
 		reviewId=resp.jsonPath().get("data.reviewId");
 		System.out.println(reviewId);
-		
+
 
 	}
-	
+
 	@Test(priority = 10)
 	public void updateReview() {
 		AddReview upd=new AddReview();
@@ -164,7 +164,7 @@ public class E2e {
 
 	@Test(priority = 11)
 	public void deleteReview() {
-		
+
 		Response resp=	ReviewEndpoints.deleteReview(token,reviewId,productId);
 		resp.then().assertThat().statusCode(200);
 

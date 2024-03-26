@@ -14,7 +14,7 @@ public class CartEndpoints {
 				.when().post(Routes.addToCartUrl);
 		return resp;
 	}
-	
+
 	public static Response updateCart(payload.updateCart payload,String token, int shopperId,int itemId) {
 		Response resp=RestAssured.given().body(payload)
 				.contentType(ContentType.JSON)
@@ -24,7 +24,7 @@ public class CartEndpoints {
 				.when().put(Routes.updateCartUrl);
 		return resp;
 	}
-	
+
 	public static Response getCart(String token, int shopperId,int itemId) {
 		Response resp=RestAssured.given()
 				.header("Authorization","Bearer "+token)

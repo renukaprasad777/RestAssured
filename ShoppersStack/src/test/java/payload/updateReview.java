@@ -1,13 +1,13 @@
 package payload;
 
 public class updateReview {
-	  String description;
-	  String heading;
-	  int rating;
-	  int shopperId;
-	  String shopperName;
-	  
-	  public String getDescription() {
+	String description;
+	String heading;
+	int rating;
+	int shopperId;
+	String shopperName;
+
+	public String getDescription() {
 		return description;
 	}
 	public void setDescription(String description) {
@@ -37,6 +37,6 @@ public class updateReview {
 	public void setShopperName(String shopperName) {
 		this.shopperName = shopperName;
 	}
-	
+
 
 }

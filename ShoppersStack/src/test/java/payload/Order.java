@@ -3,7 +3,7 @@ package payload;
 public class Order {
 	Address address;
 	String paymentMode;
-	
+
 	public Address getAddress() {
 		return address;
 	}

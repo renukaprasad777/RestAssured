@@ -15,7 +15,7 @@ public class ReviewEndpoints {
 				.when().post(Routes.addReviewUrl);
 		return resp;
 	}
-	
+
 	public static Response updateReview(AddReview payload, String token,int reviewId, int productId) {
 		Response resp=RestAssured.given().body(payload)
 				.contentType(ContentType.JSON)
@@ -25,7 +25,7 @@ public class ReviewEndpoints {
 				.when().put(Routes.updateReviewUrl);
 		return resp;
 	}
-	
+
 	public static Response deleteReview(String token,int reviewId,int productId) {
 		Response resp=RestAssured.given()
 				.header("Authorization","Bearer "+token)

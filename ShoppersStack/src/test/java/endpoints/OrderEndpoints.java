@@ -14,8 +14,8 @@ public class OrderEndpoints {
 				.pathParam("shopperId", shopperId)
 				.when().post(Routes.placeOrderUrl);
 		return resp;
-				
-				
+
+
 	}
 	public static Response updateOrder(int shopperId, String token,int orderId) {
 		Response resp=RestAssured.given()
@@ -25,7 +25,7 @@ public class OrderEndpoints {
 				.queryParam("status", "DELIVERED")
 				.when().patch(Routes.updateOrderStatusUrl);
 		return resp;
-				
-				
+
+
 	}
 }
